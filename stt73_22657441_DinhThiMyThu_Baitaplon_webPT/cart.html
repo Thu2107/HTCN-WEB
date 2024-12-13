@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <body style="border-style: none;position: relative;">
+        <!-- Start: Header -->
+        <nav class="navbar navbar-expand-md bg-dark py-3"  style="background: url(&quot;assets/img/BG%20color.png&quot;), #343633;position: relative;border-style: none;">
+            <div class="container">
+                <!-- Start: Logo -->
+                    <a class="navbar-brand d-flex align-items-center" href="./home.html">
+                    <a href="./home.html">
+                        <img src="./assets/img/logo1.png" width="53" height="56">
+                    </a>
+                    <a href="./home.html" style="font-size: 20px; text-decoration: none;color: #ffffff;">
+                        <span>Phong Thủy An Khang</span>
+                    </a>
+                </a>
+                <!-- End: Logo -->
+                <!-- Start: Nav_side -->
+                <div class="collapse navbar-collapse" id="navcol-5" style="width: 800px;">
+                    <!-- Start: Menu -->
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./info.html" style="color: #ffffff;">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./home.html" style="color: #ffffff;">Trang chủ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#" style="padding: 8px;color: #ffffff;">Danh mục</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="./product_list.html">Tất cả sản phẩm</a>
+                                <a class="dropdown-item" href="./product_list.html">Tranh phong thủy</a>
+                                <a class="dropdown-item" href="./product_list.html">Vòng tay phong thủy </a>
+                                <a class="dropdown-item" href="./product_list.html">Linh vật phong thủy</a>
+                               
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./news.html" style="color: #ffffff;">Vật phẩm phong thủy theo mệnh</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./support.html" style="color: #ffffff;">Hỗ trợ</a>
+                        </li>
+                    </ul>
+                    <!-- End: Menu -->
+                    <input type="search" style="margin-left: 20px;">
+                    <!-- Start: Search -->
+                    <button class="btn btn-primary" type="button" style="background: #00000000;width: 40px;height: 40px;padding: 6px;border-style: none;">
+                        <img src="./assets/img/Search.png" style="width: 30px;height: 30px;">
+                    </button>
+                    <!-- End: Search -->
+                    <!-- Start: CP -->
+                    <a class="btn btn-primary ms-md-2" role="button" href="./sign_in.html" style="height: 40px;width: 40px;padding: 6px;background: #ba0100;border-style: none;">
+                        <img src="./assets/img/Pesonal.png" style="width: 30px;height: 30px;">
+                    </a>
+                    <!-- End: CP -->
+                    <!-- Start: Cart -->
+                    <a class="btn btn-primary ms-md-2" role="button" href="./cart.html" style="width: 40px;height: 40px;padding: 6px;background: #ba0100;border-style: none;">
+                        <img src="./assets/img/Cart.png" style="width: 30px;height: 30px;">
+                    </a>
+                    <!-- End: Cart -->
+                </div>
+                <!-- End: Nav_side -->
+            </div>
+        </nav>
+        <!-- Start: Main -->
+        <div class="container" style="margin: 20px 40px;">
+            <h1>Giỏ hàng</h1>
+            <!-- Thêm phần hiển thị tổng số lượng và tổng giá -->
+            <div class="cart-summary">
+                <p><strong>Tổng số lượng sản phẩm:</strong> <span id="total-quantity">0</span></p>
+                <p><strong>Tổng giá:</strong> <span id="total-price">0₫</span></p>
+            </div>
+            <div id="cart-items" class="row">
+                <!-- Các sản phẩm sẽ được hiển thị tại đây -->
+            </div>
+            <button id="clear-cart" class="btn btn-danger mb-3" style="background-color:#ba0100;border-style: none;color: #ffffff"><b>Xóa giỏ hàng</b></button>
+            <button id="payment" class="btn btn-danger mb-3" style="background-color: #c5c5c5;border-style: none;color: #000000;"><b>Thanh toán</b></button>
+        </div>
+        <!-- Start: Footer-->
+        <footer class="text-white bg-dark" style="height: 250px;background: url(&quot;assets/img/BG%20color.png&quot;), #343633">
+            <div class="container py-4 py-lg-5">
+                <div class="row justify-content-center" style="border-style: none;margin-top: -15px;">
+                    <!-- Start: Lien_he -->
+                    <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item" style="border-style: none;">
+                        <h3 class="fs-6 text-white">Tổng đài hỗ trợ miễn phí</h3>
+                        <ul style="font-size: 12px;">
+                            <li>Liên hệ 19008198</li>
+                            <li>Phongthuyankhang@gmail.com</li>
+                           
+                        </ul>
+                    </div><!-- End: Lien_he -->
+                    <!-- Start: Dia_chi -->
+                    <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item" style="border-style: none;">
+                        <h3 class="fs-6 text-white">Địa chỉ</h3>
+                        <ul style="font-size: 12px;">
+                            <li>86 Trần Thái Tông Phường 15 Quận Tân Bình, TP.HCM</li>
+                        </ul>
+                    </div>
+                    <!-- End: Dia_chi -->
+                    <!-- Start: Chinh_sach -->
+                    <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item" style="border-style: none;">
+                        <h3 class="fs-6 text-white">Chính sách</h3>
+                        <ul class="list-unstyled" style="font-size: 12px;">
+                            <li>
+                                <a class="link-light" href="./support.html">Chính sách bảo hành</a>
+                            </li>
+                            <li>
+                                <a class="link-light" href="./support.html">Chính sách đổi trả</a>
+                            </li>
+                            <li>
+                                <a class="link-light" href="./support.html">Chính sách dữ liệu cá nhân</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End: Chinh_sach -->
+                    <!-- Start: Kenh_truyen_thong -->
+                    <div class="col-lg-3 text-center text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start order-lg-last item social" style="border-style: none;">
+                        <div class="fw-bold d-flex align-items-center mb-2">
+                            <span>
+                                <img src="./assets/img/logo1.png" width="43" height="46">  An Khang
+                            </span>
+                        </div>
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item">
+                                <img style="width: 40px;height: 40px;" src="./assets/img/FB.png">
+                            </li>
+                            <li class="list-inline-item" style="width: 50px;height: 50px;">
+                                <img style="width: 50px;height: 50px;" src="./assets/img/Mail.png">
+                            </li>
+                            <li class="list-inline-item" style="width: 50px;height: 50px;">
+                                <img style="width: 50px;height: 50px;" src="./assets/img/YTB.png">
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End: Kenh_truyen_thong -->
+                </div>
+                <hr>
+                <p class="mb-0">Copyright © 2024 An Khang</p>
+            </div>
+        </footer>
+        <script src="./assets/js/header.js"></script>
+        <script>
+            // Hàm hiển thị sản phẩm trong giỏ hàng và tính tổng số lượng và tổng giá
+            function displayCart() {
+                const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+                const cartContainer = document.getElementById('cart-items');
+                cartContainer.innerHTML = '';
+    
+                let totalQuantity = 0;
+                let totalPrice = 0;
+    
+                if (cartItems.length === 0) {
+                    cartContainer.innerHTML = '<p>Giỏ hàng trống.</p>';
+                    document.getElementById('total-quantity').innerText = '0';
+                    document.getElementById('total-price').innerText = '0₫';
+                } else {
+                    cartItems.forEach(item => {
+                        const productDiv = document.createElement('div');
+                        productDiv.classList.add('col-md-4', 'cart-item', 'mb-4');
+                        productDiv.innerHTML = `
+                            <div class="card">
+                                <img src="${item.imageSrc}" class="card-img-top" alt="${item.title}">
+                                <div class="card-body">
+                                    <h5 class="card-title">${item.title}</h5>
+                                    <p class="card-text">Giá: ${item.price}</p>
+                                    <p class="card-text">Số lượng: ${item.quantity}</p>
+                                    <p class="card-text">Color: ${item.color}</p>
+                                    <p class="card-text">Memory: ${item.memory}</p>
+                                </div>
+                            </div>
+                        `;
+                        cartContainer.appendChild(productDiv);
+    
+                        totalQuantity += parseInt(item.quantity, 10);
+                        const itemPrice = parseInt(item.price.replace(/[₫.]/g, ''), 10);
+                        totalPrice += itemPrice * item.quantity;
+                    });
+    
+                    document.getElementById('total-quantity').innerText = totalQuantity;
+                    document.getElementById('total-price').innerText = totalPrice.toLocaleString() + '₫';
+                }
+            }
+    
+            document.getElementById('clear-cart').addEventListener('click', function() {
+                localStorage.removeItem('cart');
+                displayCart();
+                alert('Giỏ hàng đã được xóa!');
+            });
+    
+            displayCart();
+        </script>
+</body>
+</html>

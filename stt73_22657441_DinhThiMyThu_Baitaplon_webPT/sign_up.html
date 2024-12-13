@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Sign_up</title>
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/Articles-Badges-images.css">
+    <link rel="stylesheet" href="./assets/css/Navbar-Centered-Links-icons.css">
+    <link rel="stylesheet" href="./assets/css/Sign-Up-Form---Gabriela-Carvalho.css">
+</head>
+
+<body style="border-style: none;position: relative;">
+    <!-- Start: Header -->
+    <nav class="navbar navbar-expand-md bg-dark py-3"  style="background: url(&quot;assets/img/BG%20color.png&quot;), #343633;position: relative;border-style: none;">
+        <div class="container">
+            <!-- Start: Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="./home.html">
+                <a href="./home.html">
+                    <img src="./assets/img/logo1.png" width="53" height="56">
+                </a>
+                <a href="./home.html" style="font-size: 20px; text-decoration: none;color: #ffffff;">
+                    <span>AN KHANG</span>
+                </a>
+            </a>
+            <!-- End: Logo -->
+            <!-- Start: Nav_side -->
+            <div class="collapse navbar-collapse" id="navcol-5" style="width: 800px;">
+                <!-- Start: Menu -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./info.html" style="color: #ffffff;">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./home.html" style="color: #ffffff;">Trang chủ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#" style="padding: 8px;color: #ffffff;">Danh mục</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="./product_list.html">Tất cả sản phẩm</a>
+                            <a class="dropdown-item" href="./product_list.html">Tranh Phong Thủy</a>
+                            <a class="dropdown-item" href="./product_list.html">Vòng Tay Phong Thủy</a>
+                            <a class="dropdown-item" href="./product_list.html">Linh Vật Phong THủy</a>
+                           
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./news.html" style="color: #ffffff;">Phong Thủy An Khang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./support.html" style="color: #ffffff;">Hỗ trợ</a>
+                    </li>
+                </ul>
+                <!-- End: Menu -->
+                <input type="search" style="margin-left: 20px;">
+                <!-- Start: Search -->
+                <button class="btn btn-primary" type="button" style="background: #00000000;width: 40px;height: 40px;padding: 6px;border-style: none;">
+                    <img src="./assets/img/Search.png" style="width: 30px;height: 30px;">
+                </button>
+                <!-- End: Search -->
+                <!-- Start: CP -->
+                <a class="btn btn-primary ms-md-2" role="button" href="./sign_in.html" style="height: 40px;width: 40px;padding: 6px;background: #ba0100;border-style: none;">
+                    <img src="./assets/img/Pesonal.png" style="width: 30px;height: 30px;">
+                </a>
+                <!-- End: CP -->
+                <!-- Start: Cart -->
+                <a class="btn btn-primary ms-md-2" role="button" href="./cart.html" style="width: 40px;height: 40px;padding: 6px;background: #ba0100;border-style: none;">
+                    <img src="./assets/img/Cart.png" style="width: 30px;height: 30px;">
+                </a>
+                <!-- End: Cart -->
+            </div>
+            <!-- End: Nav_side -->
+        </div>
+    </nav>
+    <div class="container" style="width: 1400px;">
+        <!-- Start: Sign Up Form - Gabriela Carvalho -->
+        <form onsubmit="saveUserData(); return false;" style="border-style: none;">
+            <div class="gc004-container" style="border-style: none;">
+                <h1>Đăng ký</h1>
+                <p>Điền vào bảng thông tin sau để tạo tài khoản</p>
+                <hr>
+                <label class="form-label fw-bold" for="name">Họ và tên</label>
+                <input type="text" placeholder="Ho va Ten" name="name" required="">
+                
+                <label class="form-label fw-bold" for="phone_number">Số điện thoại</label>
+                <input type="text" placeholder="So dien thoai" name="phone_number" required="">
+                
+                <label class="form-label fw-bold" for="email">Email</label>
+                <input type="text" placeholder="Email" name="email" required="">
+                
+                <label class="form-label fw-bold" for="psw">Mật khẩu</label>
+                <input type="password" placeholder="Mat khau" name="psw" required="">
+                
+                <label class="form-label fw-bold" for="psw-repeat">Nhập lại mật khẩu</label>
+                <input type="password" placeholder="Nhap lai mat khau" name="psw-repeat" required="">
+        
+                <div class="gc-clearfix">
+                    <button class="gc-cancelbtn" type="button" style="background: #ba0100;">Huỷ</button>
+                    <button class="gc-signupbtn" type="submit" style="background: #343633;">Đăng ký</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- Start: Footer-->
+    <footer class="text-white bg-dark" style="height: 250px;background: #343633;">
+        <div class="container py-4 py-lg-5">
+            <div class="row justify-content-center" style="border-style: none;margin-top: -15px;">
+                <!-- Start: Lien_he -->
+                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item" style="border-style: none;">
+                    <h3 class="fs-6 text-white">Tổng đài hỗ trợ miễn phí</h3>
+                    <ul style="font-size: 12px;">
+                        <li>Liên hệ 19008198</li>
+                        <li>Phongthuyankhang@gmail.com</li>
+                    </ul>
+                </div><!-- End: Lien_he -->
+                <!-- Start: Dia_chi -->
+                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item" style="border-style: none;">
+                    <h3 class="fs-6 text-white">Địa chỉ</h3>
+                    <ul style="font-size: 12px;">
+                        <li>86 Trần Thái Tông Phường 15 Quận Tân Bình, TP.HCM</li>
+                    </ul>
+                </div>
+                <!-- End: Dia_chi -->
+                <!-- Start: Chinh_sach -->
+                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item" style="border-style: none;">
+                    <h3 class="fs-6 text-white">Chính sách</h3>
+                    <ul class="list-unstyled" style="font-size: 12px;">
+                        <li>
+                            <a class="link-light" href="./support.html">Chính sách bảo hành</a>
+                        </li>
+                        <li>
+                            <a class="link-light" href="./support.html">Chính sách đổi trả</a>
+                        </li>
+                        <li>
+                            <a class="link-light" href="./support.html">Chính sách dữ liệu cá nhân</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End: Chinh_sach -->
+                <!-- Start: Kenh_truyen_thong -->
+                <div class="col-lg-3 text-center text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start order-lg-last item social" style="border-style: none;">
+                    <div class="fw-bold d-flex align-items-center mb-2">
+                        <span>
+                            <img src="./assets/img/logo1.png" width="43" height="46">AN KHANG
+                        </span>
+                    </div>
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item">
+                            <img style="width: 40px;height: 40px;" src="./assets/img/FB.png">
+                        </li>
+                        <li class="list-inline-item" style="width: 50px;height: 50px;">
+                            <img style="width: 50px;height: 50px;" src="./assets/img/Mail.png">
+                        </li>
+                        <li class="list-inline-item" style="width: 50px;height: 50px;">
+                            <img style="width: 50px;height: 50px;" src="./assets/img/YTB.png">
+                        </li>
+                    </ul>
+                </div>
+                <!-- End: Kenh_truyen_thong -->
+            </div>
+            <hr>
+            <p class="mb-0">Copyright © 2024 AN KHANG</p>
+        </div>
+    </footer>
+    <script>
+        function saveUserData() {
+            const name = document.querySelector('input[name="name"]').value;
+            const phone = document.querySelector('input[name="phone_number"]').value;
+            const email = document.querySelector('input[name="email"]').value;
+            const password = document.querySelector('input[name="psw"]').value;
+            const confirmPassword = document.querySelector('input[name="psw-repeat"]').value;
+        
+            if (password !== confirmPassword) {
+                alert('Mật khẩu và mật khẩu nhập lại không khớp.');
+                return;
+            }
+        
+            // Lưu thông tin người dùng vào sessionStorage để lưu trữ tạm thời
+            sessionStorage.setItem('user', JSON.stringify({ name, phone, email, password }));
+        
+            // Chuyển đến trang đăng nhập
+            window.location.href = './sign_in.html';
+        }
+    </script>
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/js/header.js"></script>
+</body>
+
+</html>
